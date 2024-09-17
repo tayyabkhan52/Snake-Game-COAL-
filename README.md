@@ -11,6 +11,9 @@ This project implements the classic **Snake Game** using assembly language for t
 
 ### 1. Introduction
 The game begins with a welcome message and project information, followed by game instructions. The objective of the game is to control a snake, collect food, and grow in size, while avoiding collisions with the game boundaries and the snake’s own body.
+![image](https://github.com/user-attachments/assets/16de7698-54f0-433e-9b28-b90537628161)
+![image](https://github.com/user-attachments/assets/8f7f4446-a42b-46c7-abc1-408d8906bbbb)
+
 
 ### 2. Game Objective
 - **Snake Control**: The player uses arrow keys to move the snake in four directions (Up, Down, Left, Right).
@@ -21,9 +24,11 @@ The game begins with a welcome message and project information, followed by game
 
 #### 3.1 Player Input
 Player input is handled through the `play_game` subroutine. The snake’s movement is controlled using the arrow keys (Up, Down, Left, Right), and the game loop processes these inputs in real-time.
+![image](https://github.com/user-attachments/assets/0a32140e-29c6-4caf-b2ff-3c93dfcfbea5)
 
 #### 3.2 Snake Movement
 The snake moves according to the player's input using subroutines like `move_snake_up`, `move_snake_down`, `move_snake_left`, and `move_snake_right`. Each subroutine updates the snake's position on the screen by writing to the video memory at address `0xb800`.
+![image](https://github.com/user-attachments/assets/0e20b9bf-bc17-463a-8471-3a0130bdf0d5)
 
 #### 3.3 Collision Detection
 The `check_death` subroutine monitors the snake’s position and determines whether it has collided with the boundaries of the game area or with itself. If a collision is detected, the game calls the `over` subroutine to display the "Game Over" message.
